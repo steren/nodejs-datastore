@@ -93,7 +93,7 @@ const task = {
 datastore
   .save(task)
   .then(() => {
-    console.log(`Saved ${task.key.name}: ${task.data.description}`);
+    console.log(`Saved ${task.key.path}: ${task.data.description}`);
   })
   .catch(err => {
     console.error('ERROR:', err);
